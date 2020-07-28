@@ -10,8 +10,8 @@ const CountryItem = ({country}) => {
         <div className="country__item">
             <Link to={`/country/${alpha3Code.toLowerCase()}`}>
                 <div className="card">
-                    <img className="card-img" src={flag} alt={name} />
-                        <span className="card-content">
+                    <img className="card__img" src={flag} alt={name} />
+                        <span className="card__content">
                             <h3>{name}</h3>
                             <p>
                                 <span className="country__description">Population:</span>{" "}

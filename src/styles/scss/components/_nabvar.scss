@@ -1,0 +1,15 @@
+.navbar {
+  background-color: $clr-white;
+  padding: 1.2em 0;
+  box-shadow: $shadow;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    font-weight: 600;
+  }
+}

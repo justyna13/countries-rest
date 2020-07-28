@@ -19,7 +19,7 @@ const Filter = () => {
 
     return (
         <div className="filter">
-            <select name="filter" onChange={handleChange} value={region}>
+            <select className="filter__select" name="filter__select" onChange={handleChange} value={region}>
                 <option value="">Filter by Region</option>
                 <option value="africa">Africa</option>
                 <option value="americas">America</option>
@@ -27,6 +27,8 @@ const Filter = () => {
                 <option value="europe">Europe</option>
                 <option value="oceania">Oceania</option>
             </select>
+
+            <span className="filter__select__arrow"></span>
         </div>
     )
 }

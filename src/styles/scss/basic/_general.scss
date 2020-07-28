@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.theme--dark {
+  background-color: $clr-very-dark-blue-2;
+  color: $clr-white;
+
+  a, .search i, ::placeholder { color: $clr-white; }
+
+  .navbar,
+  .filter,
+  input[type="text"],
+  select,
+  .card,
+  .btn,
+  .btn-country {
+    background-color: $clr-dark-blue;
+    color: $clr-white;
+  }
+}
+
+
+body {
+  font-family: $ff-main;
+  font-size: .875rem;
+  background-color: $clr-very-light-gray;
+  color: $clr-very-dark-blue;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $clr-dark-blue;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+
+.back {
+  margin: 2.5rem 0;
+
+  .btn {
+    background-color: $clr-very-light-gray;
+    padding: .5rem 1.5rem;
+    box-shadow: $shadow;
+    border-radius: 5px;
+  }
+}
+
+.btn-toggle {
+  cursor: pointer;
+}

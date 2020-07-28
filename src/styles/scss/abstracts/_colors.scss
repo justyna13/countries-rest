@@ -1,0 +1,14 @@
+// light mode
+$clr-very-dark-blue: hsl(200, 15%, 8%); // text
+$clr-dark-gray: hsl(0, 0%, 52%); // input
+$clr-very-light-gray: hsl(0, 0%, 98%); // bg
+
+// dark mode
+$clr-dark-blue: hsl(209, 23%, 22%); // elements
+$clr-very-dark-blue-2: hsl(207, 26%, 17%); // bg
+
+// light & dark
+$clr-white: hsl(0, 0%, 100%); // dark - text, light - elements
+
+$shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+$lg-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);

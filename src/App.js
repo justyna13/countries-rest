@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AppState from "./context/app/AppState";
 import CountryState from "./context/country/CountryState";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Country from "./components/countries/Country";
+import './styles/main.scss';
 
 function App() {
   return (

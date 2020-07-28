@@ -1,6 +1,8 @@
 import React, {useContext, useEffect} from "react";
 import CountryContext from "../../context/country/CountryContext";
 import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faLongArrowAltLeft} from "@fortawesome/free-solid-svg-icons";
 
 
 const Country = ({match}) => {
@@ -31,11 +33,15 @@ const Country = ({match}) => {
             <div className="container">
                 <div className="back">
                     <Link to={`/`} className="btn">
-                        <span className="fas fa-long-arrow-alt-left"> </span>
+                        <FontAwesomeIcon
+                            icon={faLongArrowAltLeft}
+                        />
                     </Link>
                 </div>
 
                 <div className="country">
+
+
                     <img src={flag} alt="flag"/>
 
                     <div className="country__info">

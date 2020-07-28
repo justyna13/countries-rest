@@ -19,7 +19,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="container">
                 <h1>Where in the world?</h1>
-                <a href="/" onClick={handleClick} className="btn--toggle">
+                <a href="#" onClick={handleClick} className="btn--toggle">
                     <span className={theme === "" ? "far fa-moon": "fas famoon"}> </span>
                     {" "} {theme === "" ? "Dark Mode": "Light Mode"}
                 </a>

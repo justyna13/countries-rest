@@ -1,0 +1,98 @@
+.form {
+  width: 100%;
+  padding: 2.5em 0;
+  display: flex;
+  flex-direction: column;
+
+  .filter {
+    position: relative;
+  }
+
+  input[type="text"],
+  .filter__select {
+    background-color: $clr-white;
+    font-family: $ff-main;
+    font-size: .875rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 1em;
+    width: 100%;
+  }
+
+
+  input[type="text"]:focus,
+  select:focus {
+    outline: none;
+  }
+
+  input[type="text"] {
+    padding-left: 4em;
+    box-shadow: $shadow;
+  }
+
+  .search {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+
+    span {
+      position: absolute;
+      top: 1.1rem;
+      left: 1.5rem;
+      color: $clr-dark-gray;
+    }
+  }
+
+  .filter {
+    width: 100%;
+    background-color: $clr-white;
+    border-radius: 5px;
+    box-shadow: $shadow;
+
+  }
+}
+
+.form .filter__select {
+  padding-right: 4em;
+}
+
+
+.form .filter__select__arrow {
+  background: $clr-white;
+  display: block;
+  height: 100%;
+  width: 2rem;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    border-bottom: $size solid gray;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+
+    top: 40%;
+  }
+
+  &::after {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid gray;
+
+    top: 60%;
+  }
+}
