@@ -96,7 +96,8 @@ a {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); }
 
 .form .filter__select {
-  padding-right: 4em; }
+  padding-right: 4em;
+  color: #111517; }
 
 .form .filter__select__arrow {
   background: white;
